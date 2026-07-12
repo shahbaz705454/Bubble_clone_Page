@@ -97,3 +97,21 @@ document.getElementById("prev").addEventListener("click",()=>{
     showTestimonial(current);
 
 });
+
+
+// subscribe button fnction
+let subscribe = document.getElementById("footer-form");
+
+subscribe.addEventListener("submit",(e)=>{
+    e.preventDefault();
+
+    const subsEmail = document.getElementById("subsEmail").value.trim();
+
+    alert(
+    `Email : ${subsEmail}
+    Subscribe Successfully !!!!`,
+  );
+
+  subscribe.reset();
+
+})
